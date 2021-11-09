@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "type": "object",
+  "examples": [
+    {
+      "Type": "tg",
+      "Token": "<token>"
+    }
+  ],
+  "properties": {
+    "Type": {
+      "type": "string",
+      "description": "Adapter type",
+      "const": "tg"
+    },
+    "Token": {
+      "type": "string",
+      "description": "Telegram Bot Token"
+    }
+  },
+  "required": ["Type", "Token"]
+}

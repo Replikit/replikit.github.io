@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "properties": {
+    "Adapters": {
+      "type": "array",
+      "description": "Array of adapter configuration objects",
+      "items": {
+        "type": "object",
+        "oneOf": [
+          { "$ref": "adapters/telegram.json" },
+          { "$ref": "adapters/unknown.json" }
+        ]
+      }
+    },
+    "Sessions": {
+      "$ref": "extensions/sessions.json"
+    },
+    "Views": {
+      "$ref": "extensions/views.json"
+    },
+    "Scenes": {
+      "$ref": "extensions/scenes.json"
+    }
+  }
+}
